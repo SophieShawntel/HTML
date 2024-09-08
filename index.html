@@ -1,12 +1,332 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-    <title>My first Web Page</title>
+    <meta charset="UTF-8">
+    <meta name="author" content="Sophie Shawntel">
+    <meta name="description" content="I am learning HTML very late in my life!!!">
+    <title>My First Web Page</title>
+    <link rel="icon" href="html44.png" type="image/x-icon">
+    <link rel="stylesheet" href="main.css" type="text/css">
+
 </head>
 
 <body>
-    <h1>Hello World!</h1>
-    <p>Ths is my first web page.</p>
+    <header>
+        <h1>My Goal For The Year!</h1>
+        <nav aria-label="primary-navigation">
+            <ul>
+                <li>
+                    <a href="#html">Learning HTML</a>
+                </li>
+                <li>
+                    <a href="#vacation">Planning a Vacation</a>
+                </li>
+                <li>
+                    <a href="#contact">Contact Me</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <hr>
+    <main>
+        <article id="html">
+            <h2>I'm Ready To Learn HTML</h2>
+            <p>This is my first web page.</p>
+            <section>
+                <h3>HTML44</h3>
+                <figure>
+                    <a href="html44.png" download="html44.png"> <img src="img/html44.png" alt="HTML44 Logo"
+                            title="Learning HTML44" width="325" height="225" a></a>
+                    <figcaption>HTML Logo</figcaption>
+                </figure>
+
+                <figure>
+                    <figcaption>
+                        A sample of HTML code
+                    </figcaption>
+                    <p>
+                        <code>
+                            &lt;h1&gt;Hello World!&lt;/h1&gt;
+                        </code>
+                    </p>
+                </figure>
+            </section>
+            <section>
+                <h3>My Daily Schedule</h3>
+                <p>Let me tell you how:</p>
+                <ol>
+                    <li>...I learn more about Web Dev.</li>
+                    <li>...I plan My Schedule.</li>
+                    <li>...I use resources from <abbr title="Mozilla Developer Network">
+                            <a href="https://developer.mozilla.org/">MDN</a>
+                        </abbr>.</li>
+                </ol>
+                <aside>
+                    <details>
+                        <summary>Guess the <mark> number of hours</mark> i code in a day.</summary>
+                        <p>I am so dumb and busy but wish to code for <time datetime="PT24H">24hrs</time>, yet i end up
+                            coding for just <time datetime="PT2H"> 2hrs</time></p>
+                    </details>
+                    <!--scope="col"  scope="row are sumantic (e.g technologies like screenreaders)"-->
+                </aside>
+
+                <br>
+                <!--HOW TO MAKE A TABLE!!!!-->
+                <table>
+                    <caption>My Daily Schedule</caption>
+                    <thead>
+                        <tr>
+                            <th>&nbsp;</th>
+                            <th scope="col">Time</th>
+                            <th scope="col">Activity</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Morning</th>
+                            <td>
+                                <time datetime="08:00">8am</time> - <time datetime="11:00">11am</time>
+                            </td>
+                            <td>Study HTML</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Break</th>
+                            <td>
+                                <time datetime="11:00">11am</time> - <time datetime="12:00">12pm</time>
+                            </td>
+                            <td>Time For Lunch</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Afternoon</th>
+                            <td>
+                                <time datetime="12:00">12pm</time> - <time datetime="17:00">5pm</time>
+                            </td>
+                            <td>Study for Other Courses</td>
+                        </tr>
+                        <tr>
+                            <th colspan="3">Other Activities</th>
+                        </tr>
+                        <tr>
+                            <th scope="row">Evening</th>
+                            <td rowspan="2">
+                                Free periods
+                            </td>
+                            <td>Play Games</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Night</th>
+                            <td>Sleep</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="3">
+                                This are just my daily Activities! Just eat <br> Sleep, Code and Recharge
+                            </td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </section>
+        </article>
+
+        <hr>
+        <article id="vacation">
+            <h2>I Am Planning For A Vacation In India</h2>
+            <p>I work offshore and really need to get my <em>ass off here.</em></p>
+            <section>
+                <h3>Places i would like to visit</h3>
+                <ul>
+                    <li>
+                        <p>New Delhi and Mumbai</p>
+                        <figure>
+                            <img src="img/carribian.jpg.jpg" alt="Nice Apartment" title="I Can Lodge Here." width="400"
+                                height="225" loading="lazy">
+                            <figcaption>
+                                Nice Apartment!
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li>
+                        <p>I heard exciting thing about:</p>
+                        <address>
+                            National Museum, New Delhi, National Rail Museum, <br>National Crafts Museum.
+                        </address>
+                        <br>
+                        And
+                        <br>
+                        <br>
+                        <address>
+                            Lodhi Garden, Rashtrapati Bhavan, National Zoological Park.
+                            <figure>
+                                <img src="img/vacation.png.jpeg" alt="Vacation Apartment" title="It's cool to be here!"
+                                    width="400" height="225" loading="lazy">
+                                <figcaption>
+                                    Awsome place!
+                                </figcaption>
+                            </figure>
+                        </address>
+                    </li>
+                </ul>
+            </section>
+
+            <section>
+                <h3>Places I Want To Avoid</h3>
+                <dl>
+                    <dt>Deserts</dt>
+                    <dd>Because of <strong>Wild</strong> Animals</dd>
+
+                    <dt>Villages / Remote Areas</dt>
+                    <dd>I could get kidnapped</dd>
+                </dl>
+            </section>
+
+            <hr>
+            <!--required is (true/on by default)        **autofocus can only be on one form input   i can use <div></div> or <p></p> to divide the form to be on another like..... Autocomplete is not required on on Password.......type="tel" for phone        was possible to select upto 5 coffees with ctrl+click because of the MULTIPLE and SIZE=5 attribute in the selection-->
+        </article>
+        <article id="contact">
+            <h2>Contact Me</h2>
+            <p>I would like to hear from you!</p>
+
+
+
+            <!--HOW TO MAKE A FORM-->
+
+
+
+            <form action="https://httpbin.org/get" method="get">
+                <fieldset>
+                    <legend>Personal Info</legend>
+                    <p>
+                        <label for="firstName">Last Name:</label>
+                        <input type="text" name="firstName" id="firstName" placeholder="John" autocomplete="on" required
+                            autofocus>
+                    </p>
+                    <p>
+                        <label for="lastName">First Name:</label>
+                        <input type="text" name="lastName" id="lastName" placeholder="Doe" autocomplete="on" required>
+                    </p>
+                    <p>
+                        <label for="Password">Password:&nbsp;&nbsp;</label>
+                        <input type="password" name="Password" id="Password" placeholder="keep secret" autocomplete="on"
+                            required>
+                    </p>
+                    <p>
+                        <label for="phone">Phone:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                        <input type="tel" name="phone" id="phone" placeholder="Enter num 5555555555"
+                            pattern="[0-9]{3}[0-9]{3}[0-9]{4}" required>
+                    </p>
+                    <p>
+                        <label for="decade">Favorite Decade:</label>
+                        <input type="number" name="decade" id="decade" min="1950" max="2024" step="10" value="1980">
+                    </p>
+
+
+                    <!--How to make a selction bar (Method 1)-->
+                    <p>
+                        <label for="coffee">Favorite Coffee</label>
+                        <select name="coffee" id="coffee" multiple size="5">
+                            <optgroup label="Coffees">
+                                <option value="regular coffee">Regular Coffee</option>
+                                <option value="iced coffee">Iced Coffee</option>
+                            </optgroup>
+                            <optgroup label="Espresso Drinks">
+                                <option value="latte">Latte</option>
+                                <option value="cappuccino" selected>Cappuccino</option>
+                                <option value="cortado">Cortado</option>
+                                <option value="americano">Americano</option>
+                            </optgroup>
+                            <option value="other">Other</option>
+                        </select>
+                    </p>
+
+
+                    <!--How to make a selction bar (Method 2)-->
+                    <!-- 
+                <p>
+                    <label for="coffee">Favorite Coffee:</label>
+                    <input type="text" name="coffee" id="coffee" list="coffee-lsit">
+                    <datalist id="coffee-lsit">
+                        <option value="coffee">
+                        <option value="latte">
+                        <option value="espresso">
+                        <option value="cortado">
+                        <option value="americano">
+                        <option value="other">
+                    </datalist>
+                </p> -->
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>What is your favorite food?</legend>
+                    <p>
+                        <input type="radio" name="food" id="tacos" value="tacos">
+                        <label for="tacos">Tacos</label>
+                    </p>
+                    <p>
+                        <input type="radio" name="food" id="pizza" value="pizza">
+                        <label for="pizza">Pizza</label>
+                    </p>
+                    <p>
+                        <input type="radio" name="food" id="other" value="other">
+                        <label for="other">Other</label>
+                    </p>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>Do you have pets</legend>
+                    <p>
+                        <input type="checkbox" name="pets" id="dog" value="dog">
+                        <label for="dog">Dog</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" name="pets" id="cat" value="cat">
+                        <label for="cat">Cat</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" name="pets" id="fish" value="fish">
+                        <label for="fish">Fish</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" name="pets" id="otherpet" value="otherpet">
+                        <label for="otherpet">Other</label>
+                    </p>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>Send Me A Note</legend>
+                    <label for="message">Your Message</label>
+                    <br>
+                    <textarea name="message" id="message" cols="60" rows="5" placeholder="Type your message here"
+                        maxlength="1000"></textarea>
+                    <br>
+                    <small>Maximum of 1000 Characters</small>
+
+                </fieldset>
+                <br>
+                <!--This is also a kind of sumbit but it only takes a text value////     <input type="submit" value="submit">    -->
+
+                <button type="submit">Submit</button>
+
+                <!--***GET*** request(SUBMIT) will expose the information on the url           ***POST*** request(SUMBIT) will send a more secured information and hide the information from url-->
+
+                <button type="submit" formaction="http://httpbin.org/post" formmethod="post">Post</button>
+                <button type="reset">Reset</button>
+            </form>
+
+        </article>
+    </main>
+    <hr>
+    <footer>
+        <p>
+            &lt;&lt;&lt; &copy; <a href="about.html">Sophie Shawntel</a> &gt;&gt;&gt;
+        </p>
+        <p>
+            <abbr title="Home"><a href="#">Back to Top</a>
+            </abbr>
+        </p>
+    </footer>
 </body>
 
 </html>
